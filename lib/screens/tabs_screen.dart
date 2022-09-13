@@ -24,11 +24,11 @@ class _TabsScreenState extends State<TabsScreen> {
     _pages = [
       {
         'page': CategoriesScreen(),
-        'title': 'Categories',
+        'title': 'Kategori',
       },
       {
         'page': FavoritesScreen(widget.favoriteMeals),
-        'title': 'Your Favorite',
+        'title': 'Favoritmu',
       },
     ];
     super.initState();
@@ -60,13 +60,13 @@ class _TabsScreenState extends State<TabsScreen> {
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.category),
-            label: 'Category',
+            label: 'Kategori',
             //title: Text('Categories'),
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.star),
-            label: 'Favorites',
+            label: 'Favorit',
             // icon: Text('Favorites'),
           ),
         ],

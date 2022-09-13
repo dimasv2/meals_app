@@ -49,7 +49,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Your Filters'),
+        title: Text('Filter'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.save),
@@ -71,7 +71,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
           Container(
             padding: EdgeInsets.all(20),
             child: Text(
-              'Adjust your meal selection.',
+              'Pilih Makanan Kesukaanmu.',
               style: Theme.of(context).textTheme.button,
             ),
           ),
@@ -79,8 +79,8 @@ class _FiltersScreenState extends State<FiltersScreen> {
             child: ListView(
               children: <Widget>[
                 _buildSwitchListTile(
-                  'Gluten-free',
-                  'Only include gluten-free meals.',
+                  'Bebas Gula',
+                  'Hanya sertakan makanan bebas gula .',
                   _glutenFree,
                   (newValue) {
                     setState(
@@ -91,8 +91,8 @@ class _FiltersScreenState extends State<FiltersScreen> {
                   },
                 ),
                 _buildSwitchListTile(
-                  'Lactose-free',
-                  'Only include lactose-free meals.',
+                  'Bebas Laktosa',
+                  'Hanya sertakan makanan bebas laktosa.',
                   _lactoseFree,
                   (newValue) {
                     setState(
@@ -104,7 +104,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
                 ),
                 _buildSwitchListTile(
                   'Vegetarian',
-                  'Only include vegetarian meals.',
+                  'Hanya sertakan makanan vegetarian.',
                   _vegetarian,
                   (newValue) {
                     setState(
@@ -116,7 +116,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
                 ),
                 _buildSwitchListTile(
                   'Vegan',
-                  'Only include vegan meals.',
+                  'Hanya sertakan makanan vegen.',
                   _vegan,
                   (newValue) {
                     setState(

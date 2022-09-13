@@ -35,7 +35,7 @@ class MainDrawer extends StatelessWidget {
             color: Color.fromARGB(31, 12, 7, 7),
             //Theme.of(context).accentColor,
             child: Text(
-              'Cooking Up!',
+              'Yuk Masak!',
               style: TextStyle(
                   fontWeight: FontWeight.w900,
                   fontSize: 30,
@@ -45,10 +45,10 @@ class MainDrawer extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          buildListTile('Meals', Icons.restaurant, () {
+          buildListTile('Makanan', Icons.restaurant, () {
             Navigator.of(context).pushReplacementNamed('/');
           }),
-          buildListTile('Filters', Icons.settings, () {
+          buildListTile('Filter', Icons.settings, () {
             Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);
           }),
         ],
